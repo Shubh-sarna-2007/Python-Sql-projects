@@ -1,6 +1,6 @@
 from config import DB_PASSWORD
 import mysql.connector as mys
-mydb=mys.connect(host="localhost",user="root",password="sarna11",database="bank")
+mydb=mys.connect(host="localhost",user="root",password="DB_PASSWORD",database="bank")
 mycon=mydb.cursor()
 def create_file():
     mydb=mys.connect(host="localhost",user="root",password=DB_PASSWORD,database="bank")
@@ -606,5 +606,6 @@ def menu():
 
         else:
             print("invalid choice. Please enter a number between (1-10) : ")
+
 
 menu()
